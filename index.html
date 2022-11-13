@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering App</title>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper brand-banner">
+            <h1 class="title">Lemons's Diner</h1>
+            <p class="subtitle">The best burger and pizza in town.</p>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper main">
+            <div class="mini-wrapper mw-menu-items" id="menu-items">
+            </div>
+            <div class="mini-wrapper mw-order-preview" id="order-preview">
+            </div>
+            <div class="modal-payment-prompt" id="modal-payment-prompt">
+                <div class="form-wrapper">
+                    <div class="close-btn-box-holder">
+                        <button class="close-btn" id="close-modal-btn">X</button>
+                    </div>
+                    <form class="form-el" id="form-el">
+                        <p class="form-title">Enter card details</p>
+                        <input type="text" placeholder="Enter your name" id="cx-name">
+                        <input type="text" placeholder="Enter card number" id="cx-card-num">
+                        <input type="number" placeholder="Enter CVV" id="cx-cvv">
+                        <button type="submit" class="btn pay-btn" id="cta-pay">Pay</button>
+                    </form>
+                </div>
+            </div>
+            <div class="confirmation-message-box" id="confirmation-message-box">
+            </div>
+        </div>
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
